@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deadline Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="deadlineContainer">
+    <h2>Add New Deadline</h2>
+    <form id="deadlineForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br>
+      <label for="note">Note:</label>
+      <textarea id="note" name="note"></textarea><br><br>
+      <button type="submit">Add Deadline</button>
+    </form>
+
+    <h2>Upcoming Deadlines</h2>
+    <button id="sortButton">Sort by Soonest</button>
+    <ul id="deadlineList">
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
